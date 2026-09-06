@@ -9,4 +9,3 @@ My solutions for Assiut University Newcomers Sheet.
 - Part of Sheet 4: Strings
 
 Language: C++
-``

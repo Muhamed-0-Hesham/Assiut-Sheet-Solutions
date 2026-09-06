@@ -17,17 +17,6 @@ bool tt=true;
 int freq [40]={0};
 string ss,hh;
 char c[100000];
-cin>>n;
-while(n--)
-{
-    cin>>ss>>hh;
-    int maxLen = max(ss.size(), hh.size());
-    for(i=0;i<maxLen;i++ )
-    {
-            if(i <ss.size())
-             cout << ss[i];
-            if(i <hh.size()) 
-            cout << hh[i];
-    }cout<<"\n";
-}
+
+
 }
