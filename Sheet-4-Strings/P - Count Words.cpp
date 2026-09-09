@@ -13,21 +13,18 @@ bool tt=true;
 int freq [40]={0};
 long long a[100000];
 string ss,hh;
-char c,cc,w;
-cin>>x;
+char c;
 
+    getline(cin, ss);
 
-for(i=0;i<x;i++)
-{
-    cin>>c;
-    freq[c-'a']++;
-}
-for(i=0;i<26;i++)
-{
-    while(freq[i]--)
+    for(i=0; i<(long long)ss.size(); i++)
     {
-        cout<<(char)(i+'a');
+        if( ((ss[i]>='a'&&ss[i]<='z') || (ss[i]>='A'&&ss[i]<='Z')) 
+            && (i==0 || !((ss[i-1]>='a'&&ss[i-1]<='z') || (ss[i-1]>='A'&&ss[i-1]<='Z'))) )
+        {
+            sum++;
+        }
     }
-}
 
+    cout << sum;
 }
