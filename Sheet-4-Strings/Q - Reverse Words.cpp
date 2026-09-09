@@ -34,7 +34,7 @@ char c;
         cout<<" "; 
     }
     }     
- 
+ i--;
     for(i;i>0;i--)
     if(ss[i]==' ')
     break;
