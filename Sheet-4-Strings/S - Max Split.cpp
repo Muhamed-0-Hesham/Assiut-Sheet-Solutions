@@ -18,25 +18,25 @@ getline(cin,s);
 x=s.size();
 for(i=0;i<x;i++)
 {
-
+ 
     if(s[i]=='L')
     count_L++;
     else if (s[i]=='R')
     count_R++;
-
+ 
     if(count_L == count_R)
     {
     sum++;
     count_L=0;
     count_R=0;
     }
-
+ 
 }
 cout<<sum<<endl;
-
+ 
 for(i=0;i<x;i++)
 {
-
+ 
     if(s[i]=='L')
     {
     count_L++;
@@ -56,6 +56,6 @@ for(i=0;i<x;i++)
     if(sum==0)
     break;
     }
-
+ 
 }
 }
