@@ -5,6 +5,7 @@
 #include <cmath>
 #include <algorithm>
 #include <cctype>
+#include <string>
 using namespace std;
 int main()
 {
@@ -50,5 +51,5 @@ else
         }
     }
 }
-cout<<s;
+ cout<<s;
 }
