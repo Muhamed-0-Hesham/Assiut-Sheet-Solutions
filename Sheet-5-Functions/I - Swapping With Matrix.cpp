@@ -1,30 +1,33 @@
-#include<iostream>
-#include<string.h>
-#include<fstream>
-#include<iomanip>
-#include <cmath>
 #include <algorithm>
-#include <cctype>
-#include <string>
+#include <cstdio>
+#include <vector>
 using namespace std;
-void Swapping(int x,int y)
-{
-
-};
-int main()
-{
- int N,x,y,a[250001];
- cin>>N>>x>>y;
-for(long long i=0;i<N;i++)
-  {
-    
-    for(long long j=0;j<N;j++)
-    {
-       
+ 
+void swapRows(vector<vector<int>>& a, int x, int y) {
+    swap(a[x], a[y]);
+}
+ 
+void swapCols(vector<vector<int>>& a, int x, int y) {
+    for (size_t i = 0; i < a.size(); i++)
+        swap(a[i][x], a[i][y]);
+}
+ 
+int main() {
+    int n, x, y;
+    scanf("%d %d %d", &n, &x, &y);
+    x--; y--;
+    vector<vector<int>> a(n, vector<int>(n));
+    for (int i = 0; i < n; i++)
+        for (int j = 0; j < n; j++)
+            scanf("%d", &a[i][j]);
+ 
+    swapRows(a, x, y);
+    swapCols(a, x, y);
+ 
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++)
+            printf("%d ", a[i][j]);
+        printf("\n");
     }
-  }
- Swapping(x,y);
-
-
-}           
-
+    return 0;
+}
