@@ -40,4 +40,3 @@ int main() {
     sort(a,a+n);
      Distinct(n,a);
 }
-  
