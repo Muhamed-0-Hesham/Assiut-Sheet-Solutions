@@ -1,11 +1,4 @@
-#include<iostream>
-#include<string.h>
-#include<fstream>
-#include<iomanip>
-#include <cmath>
-#include <algorithm>
-#include <cctype>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 int main() 
 { 

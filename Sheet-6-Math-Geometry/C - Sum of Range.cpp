@@ -1,16 +1,8 @@
-#include<iostream>
-#include<string.h>
-#include<fstream>
-#include<iomanip>
-#include <cmath>
-#include <algorithm>
-#include <cctype>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 int main() 
 { 
    long long x,y,sum=0,even=0,odd=0,f,l;
-   bool t=true;
    cin>>x>>y;
    if(x<y)
     swap(x,y);

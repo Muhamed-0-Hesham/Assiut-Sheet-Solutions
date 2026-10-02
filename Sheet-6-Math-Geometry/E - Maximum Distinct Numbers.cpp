@@ -1,16 +1,8 @@
-#include<iostream>
-#include<string.h>
-#include<fstream>
-#include<iomanip>
-#include <cmath>
-#include <algorithm>
-#include <cctype>
-#include <string>
+#include <bits/stdc++.h>
 using namespace std;
 int main() 
 { 
-   long long x=1,y=2,q,sum=0,even=0,odd=0,f,l;
-   bool t=true;
+   long long x=1,y=2,sum=0,f;
    cin>>f;
    if(f==1)
    {
